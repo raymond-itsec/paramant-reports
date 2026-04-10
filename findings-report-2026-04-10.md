@@ -3,7 +3,7 @@
 **Date:** 2026-04-10  
 **Prepared by:** R. Zwarts  
 **Function:** Independant Security Researcher
-**Classification**: Reported to author only. (Responsible disclosure on 10-04-2026)
+**Classification:** Reported to author only. (Responsible disclosure on 10-04-2026)
 
 ## Summary
 
