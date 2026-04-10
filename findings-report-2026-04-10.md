@@ -3,8 +3,9 @@
 **Date:** 2026-04-10  
 **Prepared by:** R. Zwarts  
 **Function:** Independant Security Researcher
+**Classification**: Reported to author only. (Responsible disclosure on 10-04-2026)
 
-## Executive Summary
+## Summary
 
 This report documents review findings identified in the JavaScript codebase for the PARAMANT relay platform. The review focused exclusively on issues with the potential to cause incorrect behavior, security exposure, delivery failures, or meaningful operational impact.
 
@@ -119,9 +120,3 @@ If the client disconnects mid-transfer, the connection resets, or an intermediar
 
 **Concrete fix**  
 Introduce an in-progress state and delay destructive deletion until the response completes successfully. If the transfer aborts, clear the in-progress state and allow a retry. If burn-on-first-access semantics must remain strict, require a positive completion acknowledgement before deleting the blob.
-
----
-
-## Closing Notes
-
-This review intentionally excluded style, naming, formatting, and minor maintainability concerns. Findings were limited to issues with plausible impact on correctness, security posture, or production operations.
